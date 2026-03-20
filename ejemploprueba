@@ -1,0 +1,22 @@
+import math
+
+def evaluar_funcion(x):
+    # El logaritmo natural solo acepta números estrictamente mayores a cero
+    if x <= 0:
+        return "Error: x debe ser mayor a 0"
+    
+    # Calculamos x multiplicado por el logaritmo natural de x
+    resultado = x * math.log(x)
+    
+    # Redondeamos a 2 decimales para que quede prolijo
+    return round(resultado, 2)
+
+print("--- Evaluador de Funciones ---")
+print()
+
+# Lista de números que queremos probar
+numeros_a_probar = [1, 2, 5, 10, 15]
+
+for numero in numeros_a_probar:
+    valor_calculado = evaluar_funcion(numero)
+    print(f"Para x = {numero}, el resultado es: {valor_calculado}")
