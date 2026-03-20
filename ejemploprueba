@@ -20,3 +20,6 @@ numeros_a_probar = [1, 2, 5, 10, 15]
 for numero in numeros_a_probar:
     valor_calculado = evaluar_funcion(numero)
     print(f"Para x = {numero}, el resultado es: {valor_calculado}")
+    print(f"prueba de modificacion")
+
+    
